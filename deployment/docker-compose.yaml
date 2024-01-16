@@ -9,4 +9,4 @@ services:
     environment:
       - DOCKER_MODE=1
     ports:
-      - "9999:9999"
+      - "8080:8080"
