@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY cmd/ ./cmd/
 COPY internal/ ./internal/
-
+COPY templates/ ./templates/
 
 RUN go build -o ./main ./cmd/app/main.go
 
