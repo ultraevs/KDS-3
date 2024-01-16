@@ -4,11 +4,12 @@ WORKDIR /app
 COPY go.mod ./
 COPY go.sum ./
 
-RUN go mod download
+RUN go mod tidy
+RUN go get -u github.com/gin-gonic/gin
 
 COPY cmd/ ./cmd/
 COPY internal/ ./internal/
-
+COPY templates/ ./templates/
 
 RUN go build -o ./main ./cmd/app/main.go
 

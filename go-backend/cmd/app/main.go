@@ -13,5 +13,5 @@ func main() {
 	router.GET("/", func(context *gin.Context) {
 		context.HTML(http.StatusOK, "index.html", gin.H{})
 	})
-	router.Run()
+	router.Run("0.0.0.0:8080")
 }
