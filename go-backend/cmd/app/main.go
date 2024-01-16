@@ -1,6 +1,7 @@
 package main
 
 import (
+	"app/internal"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -13,5 +14,6 @@ func main() {
 	router.GET("/", func(context *gin.Context) {
 		context.HTML(http.StatusOK, "index.html", gin.H{})
 	})
+	router.POST("/callback", internal.PostCallback)
 	router.Run("0.0.0.0:8080")
 }
