@@ -22,3 +22,4 @@ go.work
 .do.swp
 go-backend/.env
 app
+.idea
