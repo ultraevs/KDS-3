@@ -20,5 +20,5 @@
 # Go workspace file
 go.work
 .do.swp
-.env
+go-backend/.env
 app

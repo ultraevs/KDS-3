@@ -1,0 +1,44 @@
+basePath: /
+definitions:
+  internal.SuccessResponse:
+    properties:
+      message:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: KDS-3 API
+  title: KDS-3 Service API
+  version: "1.0"
+paths:
+  /callback:
+    post:
+      description: Post Callback Button
+      parameters:
+      - description: Name
+        in: formData
+        name: name
+        required: true
+        type: string
+      - description: Phone
+        in: formData
+        name: phone
+        required: true
+        type: string
+      - description: Comment
+        in: formData
+        name: comment
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/internal.SuccessResponse'
+      summary: Post Callback
+      tags:
+      - callback
+swagger: "2.0"
