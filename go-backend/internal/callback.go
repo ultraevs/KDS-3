@@ -26,8 +26,7 @@ func PostCallback(context *gin.Context) {
 func sendEmail(name, phone, comment string) error {
 	emailAddress := os.Getenv("EMAIL_ADDRESS")
 	emailPassword := os.Getenv("EMAIL_PASSWORD")
-
-	// Создаем сообщение
+	
 	mail := gomail.NewMessage()
 	mail.SetHeader("From", emailAddress)
 	mail.SetHeader("To", os.Getenv("EMAIL_SUBJECT"))
@@ -40,7 +39,6 @@ func sendEmail(name, phone, comment string) error {
 
 	mail.SetBody("text/plain", body)
 	dialer := gomail.NewDialer("smtp.gmail.com", 587, emailAddress, emailPassword)
-	fmt.Println(dialer.DialAndSend(mail))
 	err := dialer.DialAndSend(mail)
 	return err
 }
