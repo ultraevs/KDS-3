@@ -24,6 +24,7 @@ func main() {
 		fmt.Println("no.env ")
 	}
 	router = gin.Default()
+	router.Use(CORSMiddleware())
 	// Swagger
 	swaggerURL := ginSwagger.URL("http://localhost:8080/swagger/doc.json")
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, swaggerURL))
@@ -34,4 +35,20 @@ func main() {
 	})
 	router.POST("/callback", internal.PostCallback)
 	router.Run("0.0.0.0:8080")
+}
+
+// CORSMiddleware enables CORS for all origins
+func CORSMiddleware() gin.HandlerFunc {
+	return func(context *gin.Context) {
+		context.Writer.Header().Set("Access-Control-Allow-Origin", "*")
+		context.Writer.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+		context.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
+
+		if context.Request.Method == "OPTIONS" {
+			context.AbortWithStatus(http.StatusOK)
+			return
+		}
+
+		context.Next()
+	}
 }
