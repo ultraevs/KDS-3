@@ -17,7 +17,7 @@ var router *gin.Engine
 // @version 1.0
 // @description KDS-3 API
 
-// @host localhost:8080
+// @host kds-3.shmyaks.ru
 // @BasePath /
 func main() {
 	if err := godotenv.Load(); err != nil {
@@ -26,7 +26,7 @@ func main() {
 	router = gin.Default()
 	router.Use(CORSMiddleware())
 	// Swagger
-	swaggerURL := ginSwagger.URL("http://localhost:8080/swagger/doc.json")
+	swaggerURL := ginSwagger.URL("https://kds-3.shmyaks.ru/swagger/doc.json")
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, swaggerURL))
 
 	router.LoadHTMLGlob("templates/*")
