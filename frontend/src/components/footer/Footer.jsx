@@ -54,7 +54,7 @@ const Footer = () => {
 
 
     return (
-        <div className="footer">
+        <div className="footer" id="contacts">
             <div className="callback">
                 <h3>
                     Оставьте заявку на обратную связь
