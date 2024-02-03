@@ -21,6 +21,7 @@ type CallbackRequest struct {
 	Comment string `form:"comment" json:"comment"`
 }
 
+// PostCallback godoc
 // @Summary Post Callback
 // @Description Post Callback Button
 // @Param name formData string true "Name"
