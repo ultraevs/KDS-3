@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "KoHo", sans-serif;
+}
+
+section {
+  height: 100vh;
+}
+
+.button {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  background: #00346A;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

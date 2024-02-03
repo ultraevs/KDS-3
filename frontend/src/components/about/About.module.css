@@ -1,0 +1,19 @@
+.about {
+  position: relative;  
+  height: calc(100vh - 105px);
+  background: url(../../img/MoscowCity.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 70px;
+}
+
+.about h1 {
+    max-width: 1000px;
+    position: absolute;
+    left: 70px;
+    bottom: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+}

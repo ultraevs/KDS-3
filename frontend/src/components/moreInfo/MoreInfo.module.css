@@ -1,0 +1,23 @@
+.moreInfo {
+    margin: 105px 70px 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moreInfo_item {
+    text-align: center;
+}
+
+.needCorrectWidth {
+    width: 615px;
+}
+
+.moreInfo_item p {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.button {
+    margin-top: 30px;
+}

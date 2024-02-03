@@ -1,0 +1,40 @@
+.projects_container {
+    margin: 100px 70px 0px 70px;
+    text-align: center;
+}
+
+.block_title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.projects {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.projects_top,
+.projects_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projects_item_subtitle {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.projects_item_year {
+    font-size: 20px;
+    font-weight: 300;
+}
