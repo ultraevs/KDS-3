@@ -3,22 +3,22 @@ import styles from "./Navbar.module.css"
 
 import { Link } from "react-scroll"
 
-const Navbar = () => {
+const Navbar = ({ state, setState }) => {
   return (
     <>
-    <ul className={styles.navbar_items}>
+    <ul className={`${styles.navbar_items} ${state ? styles.active : ""}`}>
         <li className={styles.navbar_item}>
-            <Link activeClass="active" smooth spy to="about">
+            <Link activeClass="active" to="about" onClick={() => setState(!state)}>
                 О нас
             </Link>
         </li>
         <li className={styles.navbar_item}>
-            <Link activeClass="active" smooth spy to="projects">
+            <Link activeClass="active" to="projects" onClick={() => setState(!state)}>
                 Проекты
             </Link>
         </li>
         <li className={styles.navbar_item}>
-            <Link activeClass="active" smooth spy to="contacts">
+            <Link activeClass="active" to="contacts" onClick={() => setState(!state)}>
                 Контакты
             </Link>
         </li>

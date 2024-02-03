@@ -27,3 +27,26 @@
     text-decoration: none;
     color: black;
 }
+
+.header_button {
+    display: none;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.header_button img {
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 768px) {
+
+    .header_contact {
+        display: none;
+    }
+
+    .header_button {
+        display: block;
+    }
+}
