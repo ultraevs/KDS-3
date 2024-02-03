@@ -31,7 +31,7 @@ func main() {
 
 	router.LoadHTMLGlob("templates/*")
 	router.GET("/", func(context *gin.Context) {
-		context.HTML(http.StatusOK, "index.html", gin.H{})
+		context.JSON(http.StatusOK, gin.H{})
 	})
 	router.POST("/callback", internal.PostCallback)
 	router.Run("0.0.0.0:8080")

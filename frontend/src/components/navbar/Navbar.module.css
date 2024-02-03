@@ -1,0 +1,16 @@
+.navbar_items {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.navbar_item {
+    cursor: pointer;
+}
+
+.navbar_item:hover {
+    color: rgb(0, 0, 97);
+}

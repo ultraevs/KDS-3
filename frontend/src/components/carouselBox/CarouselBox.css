@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+    margin: 5rem 1rem 0 1rem;
+}
+
+.carousel{
+    width: 1280px;
+    height: 680px;
+}
+
+.carousel img{
+    width: 1280px;
+    height: 680px;
+}
+
+.gallery h3{
+    font-family: 'KoHo' ,sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.carousel h2{
+    font-family: 'KoHo' ,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+}
+
+.carousel p{
+    font-family: 'KoHo' ,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+
+@media (max-width: 1280px) {
+    .carousel{
+        width: 100%;
+        height: auto;
+    }
+    
+    .carousel img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery h3{
+        font-size: 6vw;
+    }
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@200;300;400;500;600;700;&display=swap')
+
+

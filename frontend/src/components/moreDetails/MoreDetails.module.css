@@ -1,0 +1,43 @@
+.moreDetails {
+    margin: 30px 80px;
+}
+
+.moreDetails_info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.moreDetails_info_left {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.moreDetails_item p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.item_title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.list {
+    margin-left: 30px;
+}
+
+.list li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.list li::before {
+    content: '-';
+    margin-right: 5px;
+    font-size: 20px;
+}
+  

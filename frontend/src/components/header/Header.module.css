@@ -1,0 +1,29 @@
+.header {
+    padding: 17px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #DFDFDF;
+}
+
+.header_logo img {
+    width: 125px;
+    height: 66px;
+}
+
+.header_right_part {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.header_contact {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.header_contact a {
+    text-decoration: none;
+    color: black;
+}
