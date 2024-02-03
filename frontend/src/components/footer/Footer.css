@@ -1,12 +1,14 @@
-.footer{
+.footerBackGround {
     background: #00346A;
-    color: #FFF;
+}
 
+.footer{
+    margin-top: 100px;
+    color: #FFF;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     gap: 15rem;
-    padding: 5rem 20rem 5rem 5rem;
+    padding: 5rem 0rem;
 }
 
 .callback{
