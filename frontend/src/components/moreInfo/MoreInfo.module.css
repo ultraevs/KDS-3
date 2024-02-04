@@ -25,7 +25,13 @@
 
 @media (max-width: 1300px) {
     .moreInfo {
-        flex-direction: column;
+        flex-direction: column-reverse;
+
+        margin-top: 2rem;
+    }
+
+    .moreInfo_item  p{
+        margin-top: 1rem;
     }
 
     .moreInfo_item:nth-child(2) {
