@@ -8,14 +8,16 @@ import './Partners.css'
 const Partners = () => {
     
     return (
-        <div className="partners">
-            <h2>Наши партнеры</h2>
-            <div className="partners_logo">
-                <img src={cppk} alt="" />
-                <img src={rti} alt="" />
-                <img src={logo_3} alt="" />
-            </div>        
-        </div>  
+        <div className="container">
+            <div className="partners">
+                <h2>Наши партнеры</h2>
+                <div className="partners_logo">
+                    <img src={cppk} alt="" />
+                    <img src={rti} alt="" />
+                    <img src={logo_3} alt="" />
+                </div>        
+            </div>  
+        </div>
       );
 }
  

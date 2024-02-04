@@ -54,40 +54,46 @@ const Footer = () => {
 
 
     return (
-        <div className="footer" id="contacts">
-            <div className="callback">
-                <h3>
-                    Оставьте заявку на обратную связь
-                </h3>
-                <div className='main_contacs'>
-                    <div className='input input_main'>
-                        <input type="text" placeholder='Ваше имя *' className='input_name' />
+        <div className="footerBackGround">
+            <div className="container">
+                <div className="footer" id="contacts">
+                    <div className="callback">
+                        <h3>
+                            Оставьте заявку на обратную связь
+                        </h3>
+                        <div className='main_contacs'>
+                            <div className='input input_main'>
+                                <input type="text" placeholder='Ваше имя *' className='input_name' />
+                            </div>
+                            <div className='input input_main'>
+                                <input type="text" placeholder='Телефон *' className='input_phone' />
+                            </div>
+                        </div>
+
+                        <div className='input'>
+                            <input type="text" placeholder='Комментарий' className='input_comment' />
+                        </div>
+                        <button onClick={() => {(document.querySelector(".input_name").value && /^[\d\+][\d\(\)\ -]{4,14}\d$/.test(document.querySelector(".input_phone").value)) ? (openModal(), postData()) : window.alert('Ошибка в имени или номере телефона')} }>
+                            Заказать звонок
+                        </button>
+
+                        
+                        <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+                            {modalContent}
+                        </Modal>
                     </div>
-                    <div className='input input_main'>
-                        <input type="text" placeholder='Телефон *' className='input_phone' />
+
+                    <div className='contacs'>
+                        <div className='phone'><a href='tel:+79000009090'>+7 (900) 000-90-90</a></div>
+                        <p>kds_3@mail.ru</p>
+                        <p>г. Москва, Ленинский пр-кт дом 3</p>
                     </div>
+
                 </div>
-
-                <div className='input'>
-                    <input type="text" placeholder='Комментарий' className='input_comment' />
-                </div>
-                <button onClick={() => {(document.querySelector(".input_name").value && /^[\d\+][\d\(\)\ -]{4,14}\d$/.test(document.querySelector(".input_phone").value)) ? (openModal(), postData()) : window.alert('Ошибка в имени или номере телефона')} }>
-                    Заказать звонок
-                </button>
-
-                
-                <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-                    {modalContent}
-                </Modal>
             </div>
-
-            <div className='contacs'>
-                <div className='phone'><a href='tel:+79000009090'>+7 (900) 000-90-90</a></div>
-                <p>kds_3@mail.ru</p>
-                <p>г. Москва, Ленинский пр-кт дом 3</p>
-            </div>
-
         </div>
+        
+        
 
     );
 }

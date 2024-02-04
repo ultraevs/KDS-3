@@ -1,17 +1,22 @@
 .about {
-  position: relative;  
-  height: calc(100vh - 105px);
+  position: relative;
+  height: calc(100vh - 87px);
   background: url(../../img/MoscowCity.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0px 70px;
 }
 
-.about h1 {
+.aboutZone {
+  position: absolute;
+  position: absolute; 
+  left:0;
+  right:0;
+  bottom: 40px;
+}
+
+.aboutZone h1 {
     max-width: 1000px;
-    position: absolute;
-    left: 70px;
-    bottom: 50px;
     color: white;
     font-size: 30px;
     font-weight: 500;

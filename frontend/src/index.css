@@ -8,6 +8,11 @@ body {
   font-family: "KoHo", sans-serif;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
 section {
   height: 100vh;
 }

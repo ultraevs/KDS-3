@@ -4,7 +4,7 @@ services:
   frontend:
     build:
       context: ../frontend/
-      dockerfile: ../frontend/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "5173:5173"
   backend:
