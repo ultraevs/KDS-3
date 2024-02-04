@@ -125,12 +125,17 @@
     opacity: 0;
 }
 
+.modal_window{
+    display: flex;
+    flex-direction: column;
+}
+
 .modal_window button{
     border: none;
     background: none;
-
-    position: relative;
-    left: 29rem;
+    
+    display: flex;
+    justify-content: end;
 }
 
 .modal_window p{
@@ -163,6 +168,11 @@
     .contacs a{
         font-size: 4vw;
     }
+
+    .modal_window p{
+        font-size: 4vw;
+    } 
+
 }
 
 @media (max-width: 580px) {
@@ -196,5 +206,10 @@
 
     .contacs a{
         font-size: 8vw;
+    }
+
+    .modal_window img{
+        width: 24px;
+        height: 24px;
     }
 }

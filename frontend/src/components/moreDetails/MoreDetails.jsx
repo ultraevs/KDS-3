@@ -9,7 +9,6 @@ const MoreDetails = () => {
   return (
     <>
     <div id='moreDetails' className={styles.moreDetails}>
-      <Link to="/"><button className='button'>Вернуться</button></Link>
       <div className={styles.moreDetails_info}>
         <div className={styles.moreDetails_info_left}>
 
@@ -45,8 +44,15 @@ const MoreDetails = () => {
           <div className={styles.moreDetails_item}>
             <div className="item-downland">
                 <h2><span>Состоим в Реестре СРО</span> с 27.01.2021</h2>
-                <button>(Скачать документ)</button>
+                <div className="hey">
+                  <button>(Скачать документ)</button>
+                  <Link to="/">
+                    <button className='button'>Вернуться</button>
+                  </Link>
+                </div>
             </div>
+
+
           </div>
 
         </div>

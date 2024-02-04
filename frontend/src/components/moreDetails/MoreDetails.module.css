@@ -25,8 +25,8 @@
     font-weight: 600;
 }
 
-.list {
-    margin-left: 30px;
+.moreDetails_item ul{
+    padding: 0;
 }
 
 .list li {
@@ -40,4 +40,18 @@
     margin-right: 5px;
     font-size: 20px;
 }
-  
+
+.hey{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+
+    background-color: black;
+}
+
+
+@media (max-width: 768px) {
+    img {
+        display: none;
+    }
+}
