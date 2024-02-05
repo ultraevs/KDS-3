@@ -57,7 +57,7 @@ const MoreDetails = () => {
 
         </div>
 
-        <div>
+        <div className={styles.map}>
           <img src={Map} alt="карта" />
         </div>
       </div>
