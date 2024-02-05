@@ -51,7 +51,7 @@
 
 
 @media (max-width: 768px) {
-    img {
+    .map img{
         display: none;
     }
 }
