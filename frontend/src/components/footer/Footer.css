@@ -91,18 +91,6 @@
     text-align: left;
 }
 
-.contacs a{
-    text-decoration: none;
-    color: #FFF;
-    font-family: 'KoHo' ,sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 44px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
 /* Modal */
 
 .ReactModal__Content{
@@ -149,10 +137,20 @@
     text-align: center;
 }
 
+@media (max-width: 1500px) {
+    .footer{
+        padding: 5rem 5rem;
+    }
+}
+
 @media (max-width: 1000px) {
     .footer{
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .contacs{
+        align-items: start;
     }
 }
 
@@ -165,10 +163,6 @@
         font-size: 4vw;
     }
 
-    .contacs a{
-        font-size: 4vw;
-    }
-
     .modal_window p{
         font-size: 4vw;
     } 
@@ -178,34 +172,35 @@
 @media (max-width: 580px) {
     .main_contacs{
         flex-direction: column;
+        gap: 2rem;
     }
 
     .callback h3{
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .footer button{
-        font-size: 6vw;
-        width: 90%;
+        font-size: 4.5vw;
+        width: 100%;
     }
 
-    .contacs a{
-        font-size: 6vw;
+    .contacs{
+        gap: 0;
     }
+
+    .contacs p{
+        font-size: 4vw;
+    }
+
 }
 
 @media (max-width: 480px) {
     .callback h3{
-        font-size: 8vw;
+        font-size: 5vw;
     }
 
     .footer button{
-        font-size: 8vw;
-        width: 90%;
-    }
-
-    .contacs a{
-        font-size: 8vw;
+        font-size: 5vw;
     }
 
     .modal_window img{
