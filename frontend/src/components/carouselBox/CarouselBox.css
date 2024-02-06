@@ -17,15 +17,6 @@
     height: 680px;
 }
 
-.gallery h3{
-    font-family: 'KoHo' ,sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 39px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
 .carousel h2{
     font-family: 'KoHo' ,sans-serif;
     font-size: 20px;
@@ -34,7 +25,7 @@
     letter-spacing: 0em;
 }
 
-.carousel p{
+.carousel p {
     font-family: 'KoHo' ,sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -52,11 +43,4 @@
         width: 100%;
         height: auto;
     }
-}
-
-@media (max-width: 480px) {
-    .gallery h3{
-        font-size: 6vw;
-    }
-    
 }

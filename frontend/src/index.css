@@ -28,3 +28,28 @@ section {
   border: none;
   cursor: pointer;
 }
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 8px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 440px) {
+  .button {
+    padding: 6px;
+    font-size: 5vw;
+  }
+}

@@ -8,7 +8,7 @@ import Map from "../../img/Map.png"
 const MoreDetails = () => {
   return (
     <>
-    <div id='moreDetails' className={styles.moreDetails}>
+    <div className={styles.moreDetails}>
       <div className={styles.moreDetails_info}>
         <div className={styles.moreDetails_info_left}>
 

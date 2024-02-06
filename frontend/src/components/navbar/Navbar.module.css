@@ -4,10 +4,10 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    font-size: 20px;
+    gap: 1.875rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.625rem;
 }
 
 .navbar_item {
@@ -20,7 +20,7 @@
 
 @media (max-width: 768px) {
     .navbar_items {
-        padding-top: 50px;
+        padding-top: 3.125rem;
         position: fixed;
         top: 0;
         left: -225px;
@@ -28,6 +28,7 @@
         background-color: rgb(255, 255, 255);
         width: 220px;
         height: 100%;
+        font-size: 1rem;
         border-radius: 10px;
         border-right: solid 1px black;
         transition: transform 0.3s linear;
