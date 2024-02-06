@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "KoHo", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -20,7 +20,7 @@ section {
 .button {
   padding: 10px;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   border-radius: 10px;
   background: #00346A;
