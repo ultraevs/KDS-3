@@ -3,10 +3,15 @@ import styles from "./Header.module.css"
 
 import logo from "../../img/KDS-LOGO.png"
 import Navbar from '../navbar/Navbar'
-import BurgerMenu from "../../assets/icon/menu.png"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isBurger, setIsBurger] = useState(true);
+
+    const onClick = () => {
+        setIsOpen(!isOpen)
+        setIsBurger(!isBurger);
+    }
   return (
     <>
     <div className='container'>
@@ -16,10 +21,10 @@ const Header = () => {
             </div>
             <div>
                 <div>
-                    <Navbar state={isOpen} setState={setIsOpen}/>
+                    <Navbar state={isOpen} setState={setIsOpen} burgerState={isBurger} setBurger={setIsBurger}/>
                 </div>
-                <button className={styles.header_button} onClick={() => setIsOpen(!isOpen)}>
-                    <img src={BurgerMenu} alt="Menu" />
+                <button className={styles.header_button} onClick={ onClick }>
+                    <span>{isBurger ? '☰' : '✕'}</span>
                 </button>
             </div>
         </div>
