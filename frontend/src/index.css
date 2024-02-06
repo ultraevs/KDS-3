@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "KoHo", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -20,11 +20,36 @@ section {
 .button {
   padding: 10px;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   border-radius: 10px;
   background: #00346A;
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 8px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 440px) {
+  .button {
+    padding: 6px;
+    font-size: 5vw;
+  }
 }

@@ -10,7 +10,7 @@ const Partners = () => {
     return (
         <div className="container">
             <div className="partners">
-                <h2>Наши партнеры</h2>
+                <h2 className="title">Наши партнеры</h2>
                 <div className="partners_logo">
                     <img src={cppk} alt="" />
                     <img src={rti} alt="" />

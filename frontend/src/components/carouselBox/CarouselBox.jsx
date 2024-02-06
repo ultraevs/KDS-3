@@ -19,7 +19,7 @@ const CarouselBox = () => {
     return (
         <div className="container">
             <div className='gallery'>
-                <h3>Галерея</h3>
+                <h3 className='title'>Галерея</h3>
                 <Carousel>
                     <Carousel.Item>
                         <img                     

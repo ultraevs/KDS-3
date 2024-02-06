@@ -5,7 +5,8 @@ import MoreDetails from '../../components/moreDetails/MoreDetails'
 
 const MoreDetailsPage = () => {
   return (
-    <MoreDetails />
+
+    <div id='moreDetails'><MoreDetails /></div>
   )
 }
 

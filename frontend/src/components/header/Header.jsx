@@ -14,12 +14,9 @@ const Header = () => {
             <div className={styles.header_logo}>
                 <img src={logo} alt="logo" />
             </div>
-            <div className={styles.header_right_part}>
+            <div>
                 <div>
                     <Navbar state={isOpen} setState={setIsOpen}/>
-                </div>
-                <div className={styles.header_contact}>
-                    <a href="tel:+79000009000">+7 (900) 000-90-00</a>
                 </div>
                 <button className={styles.header_button} onClick={() => setIsOpen(!isOpen)}>
                     <img src={BurgerMenu} alt="Menu" />
