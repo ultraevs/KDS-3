@@ -1,5 +1,11 @@
 .moreDetails {
-    margin: 30px 80px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
 }
 
 .moreDetails_info {
@@ -47,6 +53,25 @@
     gap: 5rem;
 
     background-color: black;
+}
+
+.item_downland {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.item_downland h2 {
+    margin-bottom: 0px;
+}
+
+.downland {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
 }
 
 

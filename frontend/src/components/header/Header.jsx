@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./Header.module.css"
 
-import logo from "../../img/KDS-LOGO.png"
+import superLogo from "../../img/SuperLogo.svg"
 import Navbar from '../navbar/Navbar'
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
     <div className='container'>
         <div className={styles.header}>
             <div className={styles.header_logo}>
-                <img src={logo} alt="logo" />
+                <img src={superLogo} alt="logo" />
             </div>
             <div>
                 <div>
