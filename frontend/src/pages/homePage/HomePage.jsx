@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from "./HomePage.module.css"
 
 import Header from '../../components/header/Header'
@@ -10,6 +10,9 @@ import Partners from '../../components/partners/Partners'
 import Footer from '../../components/footer/Footer'
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <>
         <Header />
