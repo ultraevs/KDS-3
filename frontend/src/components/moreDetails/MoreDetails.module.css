@@ -15,7 +15,7 @@
 }
 
 .moreDetails_info_left {
-    width: 750px;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -75,8 +75,19 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .map img{
         display: none;
+    }
+
+    .moreDetails_info_left {
+        max-width: 100%;
+    }
+
+    .item_downland {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: normal;
+        gap: 10px;
     }
 }
