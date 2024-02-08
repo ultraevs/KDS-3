@@ -6,13 +6,6 @@ import classNames from 'classnames'
 import Map from "../../img/Map.png"
 
 const MoreDetails = () => {
-
-  const [showAlert, setShowAlert] = useState(false);
-
-  const handleClick = () => {
-    setShowAlert(true);
-  };
-  
   return (
     <>
     <div className={ classNames(styles.moreDetails, "container")}>
@@ -52,12 +45,10 @@ const MoreDetails = () => {
             <div className={styles.item_downland}>
                 <h2><span>Состоим в Реестре СРО</span> с 27.01.2021</h2>
                 <div className="hey">
-                  <button className={styles.downland} onClick={handleClick}>(Скачать документ)</button>
+                  <button className={styles.downland}>(Скачать документ)</button>
                 </div>
             </div>
           </div>
-
-          {showAlert && <p>No Data</p>}
 
         </div>
 
