@@ -24,6 +24,11 @@
     color: black;
 }
 
+.navbar_arrow svg {
+    width: 25px;
+    height: 25px;
+}
+
 @media (max-width: 768px) {
     .navbar_item {
         display: none;
