@@ -23,7 +23,6 @@
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 
 ::placeholder {color: #FFF;}
@@ -73,18 +72,25 @@
     line-height: normal;
 }
 
-.contacs{
+.contacs {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.contacs p{
+.contacs p,
+.contacs a{
+    margin-bottom: 0px;
+    color: white;
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.contacs a {
+    text-decoration: none;
 }
 
 /* Modal */
@@ -180,10 +186,11 @@
     }
 
     .contacs{
-        gap: 0;
+        gap: 0.5rem;
     }
 
-    .contacs p{
+    .contacs p,
+    .contacs a {
         font-size: 4vw;
     }
 
