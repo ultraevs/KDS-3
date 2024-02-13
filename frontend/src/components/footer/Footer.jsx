@@ -84,9 +84,9 @@ const Footer = () => {
                     </div>
 
                     <div className='contacs'>
-                        {/* <div className='phone'><a href='tel:+79000009090'>+7 (900) 000-90-90</a></div> */}
-                        <p>kds_3@mail.ru</p>
-                        <p>г. Москва, Ленинский пр-кт дом 3</p>
+                        <div className='phone'><a href='tel:8(495) 568-05-58'>8(495) 568-05-58</a></div>
+                        <p>kds-z2020@yandex.ru</p>
+                        <p>3 Красносельский переулок 21. Стр 1</p>
                     </div>
 
                 </div>
