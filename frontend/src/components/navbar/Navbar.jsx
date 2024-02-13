@@ -3,11 +3,7 @@ import styles from "./Navbar.module.css"
 
 import { Link } from "react-scroll"
 
-const Navbar = ({ state, setState, burgerState, setBurger }) => {
-    const onClick = () => {
-        setState(!state)
-        setBurger(!burgerState)
-    }
+const Navbar = ({ state, onClick }) => {
   return (
     
     <>
