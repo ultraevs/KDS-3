@@ -24,12 +24,12 @@ const Projects = () => {
                     <p className={styles.projects_item_year}>2023</p>
                 </div>
                 <div className={styles.projects_item}>
-                    <img src={project2} alt="project" />
+                    <img src={project3} alt="project" />
                     <p className={styles.projects_item_subtitle}>Вешняки</p>
                     <p className={styles.projects_item_year}>2023</p>
                 </div>
                 <div className={styles.projects_item}>
-                    <img src={project3} alt="project" />
+                    <img src={project2} alt="project" />
                     <p className={styles.projects_item_subtitle}>Плющево</p>
                     <p className={styles.projects_item_year}>2023</p>
                 </div>
