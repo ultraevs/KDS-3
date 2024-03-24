@@ -44,9 +44,9 @@ const MoreDetails = () => {
           <div className={styles.moreDetails_item}>
             <div className={styles.item_downland}>
                 <h2><span>Состоим в Реестре СРО</span> с 27.01.2021</h2>
-                <div className="hey">
+                {/* <div className="hey">
                   <button className={styles.downland}>(Скачать документ)</button>
-                </div>
+                </div> */}
             </div>
           </div>
 
